@@ -5,16 +5,29 @@ class Buttons extends Component{
 		return(
 			<div className='col-sm-12 buttons'>
 				<div className='col-sm-4'>
-					<button className="btn btn-danger">Deal</button>
+					<button onClick={this.props.deal} className="btn btn-default">Deal</button>
 				</div>
 				<div className='col-sm-2'>
-					<button className="btn btn-danger">Bet 10</button>
+					<button 
+						onClick={
+							()=>{this.props.bet(10)}
+						} 
+						className="btn btn-default">Bet 10
+					</button>
 				</div>
 				<div className='col-sm-2'>
-					<button className="btn btn-danger">Bet 100</button>
+					<button 
+						onClick={
+							()=>{this.props.bet(100)}
+						} 
+						className="btn btn-default">Bet 100
+					</button>
 				</div>
-				<div className='col-sm-4'>
-					<button className="btn btn-danger">Check</button>
+				<div className='col-sm-2'>
+					<button className="btn btn-warning">Check</button>
+				</div>
+				<div className='col-sm-2'>
+					<button className="btn btn-danger">Fold</button>
 				</div>
 			</div>
 		)

@@ -1,10 +1,16 @@
 .the-table{
   background: green;
   color: white;
+  text-align: center;
 }
 
 .card{
   min-height: 249px;
   min-width: 179px;
+  margin: 5px;
   /* background: url('/cards/deck.png'); */
+}
+.the-pot{
+	font-size: 35px;
+
 }
