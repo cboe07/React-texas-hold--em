@@ -1,0 +1,10 @@
+.the-table{
+  background: green;
+  color: white;
+}
+
+.card{
+  min-height: 249px;
+  min-width: 179px;
+  /* background: url('/cards/deck.png'); */
+}
