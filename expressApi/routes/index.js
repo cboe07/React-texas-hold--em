@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/hand-checker', (req,res)=>{
 	var prop = 'hand[]';
-	console.log(req.body.[prop]
+	console.log(req.body[prop])
 	res.json({msg: "You hit the express API!"})
 })
 

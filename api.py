@@ -5,11 +5,11 @@ from flask_cors import CORS
 
 app = Flask(__name__);
 CORS(app)
-@app.route('/',methods=['GET'])
+@app.route('/', methods=['GET'])
 def home_page():
 	return "Hello, World!"
 
-@app.route('/hand-checker',methods=['POST'])
+@app.route('/hand-checker', methods=['POST'])
 def hand_checker():
 	hand = request.form.getlist('hand[]');
 	print hand[0]
